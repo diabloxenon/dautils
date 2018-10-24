@@ -1,2 +1,3 @@
 appdirs
 landslide
+pandas-datareader
