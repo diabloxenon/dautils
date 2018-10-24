@@ -1,3 +1,5 @@
 build/
 dist/
 joblib/
+__pycache__/
+.eggs/
