@@ -18,8 +18,6 @@ dautils/stats.py
 dautils/ts.py
 dautils/weather.pckl
 dautils/web.py
-dautils/log.conf
-dautils/weather.pckl
 dautils.egg-info/PKG-INFO
 dautils.egg-info/SOURCES.txt
 dautils.egg-info/dependency_links.txt
