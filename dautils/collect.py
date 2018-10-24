@@ -1,6 +1,6 @@
 """ This module contains utilities related to collections."""
 
-from dautil import log_api
+from dautils import log_api
 from itertools import chain
 from itertools import groupby
 import collections
