@@ -90,7 +90,7 @@ def trimean(arr):
     :returns: The trimean for the array.
 
     >>> import numpy as np
-    >>> from dautil import stats
+    >>> from dautils import stats
     >>> stats.trimean(np.arange(9))
     4.0
 
@@ -114,7 +114,7 @@ def outliers(arr, method='IQR', factor=1.5, percentiles=(5, 95)):
     :returns: A namedtuple with upper and lower limits.
 
     >>> import numpy as np
-    >>> from dautil import stats
+    >>> from dautils import stats
     >>> stats.outliers(a)
     Outlier(min=-48.5, max=149.5)
     """
@@ -144,7 +144,7 @@ def clip_outliers(arr):
     :returns: A clipped values array.
 
     >>> import numpy as np
-    >>> from dautil import stats
+    >>> from dautils import stats
     >>> arr = list(range(5))
     >>> outliers = [-100, 100]
     >>> arr.extend(outliers)
@@ -344,7 +344,7 @@ class Box():
         :returns: The interquartile range of the data.
 
         >>> import numpy as np
-        >>> from dautil import stats
+        >>> from dautils import stats
         >>> arr = np.array([7, 15, 36, 39, 40, 41])
         >>> box = stats.Box(arr)
         >>> box.calc_iqr()

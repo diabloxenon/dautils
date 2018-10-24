@@ -29,7 +29,7 @@ class LRUCache():
             made between arguments of different types.
         :ivar cached: The cached function.
 
-        >>> from dautil import perf
+        >>> from dautils import perf
         >>> from functools import lru_cache
         >>> cache = perf.LRUCache(lru_cache, lambda x: x)
         >>> cache.cache()
@@ -94,7 +94,7 @@ class StopWatch():
 
     :ivar elapsed: Elapsed time in seconds.
 
-    >>> from dautil import perf
+    >>> from dautils import perf
     >>> with perf.StopWatch() as sw:
     ...     pass
     ...

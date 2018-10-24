@@ -3,7 +3,7 @@ import json
 import os
 
 
-FJSON = 'dautil.json'
+FJSON = 'dautils.json'
 
 
 def file_exists(tocheck):

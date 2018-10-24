@@ -1,8 +1,8 @@
 """ This module contains reporting utilities. """
 import pandas as pd
 from landslide.generator import Generator as LandslideGenerator
-from dautil import data
-from dautil import log_api
+from dautils import data
+from dautils import log_api
 import os
 import sys
 
@@ -53,7 +53,7 @@ class DFBuilder():
 
         :returns: A table-like dict.
 
-        >>> from dautil import report
+        >>> from dautils import report
         >>> builder = report.DFBuilder(['A', 'B'])
         >>> row = list(range(2))
         >>> builder.row(row)
@@ -146,7 +146,7 @@ class HTMLBuilder():
 
         :param heading: The text of the heading.
 
-        >>> from dautil import report
+        >>> from dautils import report
         >>> hb = report.HTMLBuilder()
         >>> hb.h2('Heading 2')
         >>> hb.html
@@ -161,7 +161,7 @@ class HTMLBuilder():
         :param txt: The html to add.
 
 
-        >>> from dautil import report
+        >>> from dautils import report
         >>> hb = report.HTMLBuilder()
         >>> hb.add('<p>42</p>')
         >>> hb.html

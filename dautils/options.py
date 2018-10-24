@@ -5,7 +5,7 @@ import matplotlib as mpl
 import numpy as np
 
 
-APP_DIR = 'dautil'
+APP_DIR = 'dautils'
 
 
 def mimic_seaborn():

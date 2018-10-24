@@ -1,5 +1,5 @@
 ''' Database related utilities. '''
-from dautil import log_api
+from dautils import log_api
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 

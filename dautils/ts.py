@@ -172,7 +172,7 @@ def short_month(i, zero_based=False):
 
     :returns: The short name of the month for example Jan.
 
-    >>> from dautil import ts
+    >>> from dautils import ts
     >>> ts.short_month(1)
     'Jan'
     """
@@ -203,7 +203,7 @@ def month_index(month, zero_based=False):
 
     :returns: The index of the month.
 
-    >>> from dautil import ts
+    >>> from dautils import ts
     >>> ts.month_index('Jan')
     1
     """

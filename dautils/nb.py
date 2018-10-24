@@ -3,10 +3,10 @@ from IPython.display import display
 from IPython.display import Math
 # from IPython.html import widgets : DEPRECATED OPTION
 import ipywidgets as widgets
-from dautil import collect
-from dautil import conf
-from dautil import ts
-from dautil import log_api
+from dautils import collect
+from dautils import conf
+from dautils import ts
+from dautils import log_api
 import matplotlib as mpl
 from matplotlib.colors import rgb2hex
 import pprint
@@ -342,7 +342,7 @@ class LatexRenderer():
 
     .. code-block:: python
 
-        import dautil as dl
+        import dautils as dl
         lr = dl.nb.LatexRenderer(chapter=6, start=6, context=context)
         lr.render(r'Y_j= \sum _{i=-(m-1)/2}')
     """
@@ -520,7 +520,7 @@ class LabelWidget():
 
     .. code-block:: python
 
-        import dautil as dl
+        import dautils as dl
         dl.nb.LabelWidget(2, 2, context)
     """
     def __init__(self, nrows=1, ncols=1, context=NullContext()):

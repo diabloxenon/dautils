@@ -12,7 +12,7 @@ def chunk(alist, size):
     :param alist: List-like sequence.
     :param size: Size of the chunk.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> collect.chunk(list(range(7)), 3)
     <generator object chunk at 0x1006a7480>
     >>> next(collect.chunk(list(range(7)), 3))
@@ -31,7 +31,7 @@ def longest_streak(arr, val):
 
     :returns: The count of the longest sequence.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> collect.longest_streak([0, 1, 1, 0, 1, 1, 1], 1)
     3
     '''
@@ -56,7 +56,7 @@ def sort_dict_by_keys(adict):
 
     :returns: An `OrderedDict` sorted by keys.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> food = {'spam': 42, 'eggs': 28}
     >>> collect.sort_dict_by_keys(food)
     OrderedDict([('eggs', 28), ('spam', 42)])
@@ -72,7 +72,7 @@ def dict_from_keys(adict, keys):
 
     :returns: A subset of the input dictionary.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> adict = {'a.latex': 1, 'b.latex': 2, 'c': 3}
     >>> collect.dict_from_keys(adict, ['b.latex', 'a.latex'])
     {'a.latex': 1, 'b.latex': 2}
@@ -88,7 +88,7 @@ def filter_list(func, alist):
 
     :returns: The filtered list.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> alist = ['a', 'a.color', 'color.b']
     >>> collect.filter_list(lambda x: x.endswith('color'), alist)
     ['a.color']
@@ -104,7 +104,7 @@ def filter_dict_keys(func, adict):
 
     :returns: A list of keys selected by the filter.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> adict = {'a.latex': 1, 'b.latex': 2, 'c': 3}
     >>> collect.filter_dict_keys(lambda x: x.endswith('.latex'), adict)
     ['a.latex', 'b.latex']
@@ -139,7 +139,7 @@ def is_rectangular(alist):
 
     :returns: True if the argument is rectangular.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> collect.is_rectangular([[2, 1], [3]])
     False
     >>> collect.is_rectangular([[2, 1], [3, 4]])
@@ -172,7 +172,7 @@ def flatten(iterable):
 
     :returns: The iterable flattened as a flat list.
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>> collect.flatten([[1, 2]])
     [1, 2]
     """
@@ -190,7 +190,7 @@ def flatten(iterable):
 def grid_list(arr):
     ''' Creates a 2D cartesian product grid from an array:
 
-    >>> from dautil import collect
+    >>> from dautils import collect
     >>>  arr = list(range(2))
     >>> arr
     [0, 1]

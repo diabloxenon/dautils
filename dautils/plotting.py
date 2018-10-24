@@ -3,10 +3,10 @@ from itertools import cycle
 from matplotlib.colors import rgb2hex
 import matplotlib.pyplot as plt
 import numpy as np
-from dautil import collect
-from dautil import log_api
-from dautil import report
-from dautil import stats
+from dautils import collect
+from dautils import log_api
+from dautils import report
+from dautils import stats
 from matplotlib.markers import MarkerStyle
 from scipy.stats import norm
 
@@ -137,7 +137,7 @@ def sample_cmap(name='Reds', start=0.1, end=0.9, ncolors=9):
 
     :returns: A sample of the color map.
 
-    >>> from dautil import plotting
+    >>> from dautils import plotting
     >>> plotting.sample_cmap()
     array([[ 0.99692426,  0.89619378,  0.84890428,  1.        ],
            [ 0.98357555,  0.41279508,  0.28835065,  1.        ],
@@ -160,7 +160,7 @@ def sample_hex_cmap(name='Reds', start=0.1, end=0.9, ncolors=9):
 
     :returns: A list of hex values from a sample of the color map.
 
-    >>> from dautil import plotting
+    >>> from dautils import plotting
     >>> plotting.sample_hex_cmap()
     ['#fee5d8', '#fdcab5', '#fcab8f', '#fc8a6a', '#fb694a',
     '#f14432', '#d92523', '#bc141a', '#980c13']

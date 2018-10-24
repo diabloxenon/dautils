@@ -14,9 +14,9 @@ def path2url(path):
 
     :returns: The corresponding URL.
 
-    >>> from dautil import web
-    >>> web.path2url('/home/dautil')
-    'file:///home/dautil'
+    >>> from dautils import web
+    >>> web.path2url('/home/dautils')
+    'file:///home/dautils'
     '''
     return urlparse.urljoin('file:', urlrequest.pathname2url(path))
 

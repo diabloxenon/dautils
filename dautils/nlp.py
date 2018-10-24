@@ -2,8 +2,8 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 import pandas as pd
-from dautil import data
-from dautil import log_api
+from dautils import data
+from dautils import log_api
 import os
 import datetime
 from nltk.corpus import brown

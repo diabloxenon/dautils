@@ -7,8 +7,8 @@ import logging.config
 import pprint
 from appdirs import AppDirs
 import os
-from dautil import conf
-from dautil import options
+from dautils import conf
+from dautils import options
 import inspect
 
 
@@ -62,7 +62,7 @@ def get_logger(name):
 def conf_logger(name):
     """ Creates a logger using a configuration file
     provided by the user in the current working directory.
-    If a configuration file is not found, dautil uses
+    If a configuration file is not found, dautils uses
     basic configuration.
 
     :param name: The name of the logger.
@@ -89,7 +89,7 @@ def shorten(module_name):
 
     :returns: The shortened name.
 
-    >>> from dautil import log_api
+    >>> from dautils import log_api
     >>> log_api.shorten('pandas.io.wb')
     'pandas'
     """
@@ -173,7 +173,7 @@ class Printer():
         """ Takes the head, mid and the tail of a list \
             and discards the rest. For example
 
-        >>> from dautil import log_api
+        >>> from dautils import log_api
         >>> p = log_api.Printer(nelems=3)
         >>> p.compress_mid(list(range(5)))
         [0, '...', 2, '...', 4]

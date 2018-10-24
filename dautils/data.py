@@ -10,8 +10,8 @@ from appdirs import AppDirs
 import os
 from pkg_resources import resource_filename
 import urllib.request as urlrequest
-from dautil import log_api
-from dautil import options
+from dautils import log_api
+from dautils import options
 from collections import namedtuple
 from joblib import Memory
 import csv
@@ -42,7 +42,7 @@ def centify(text, multiplier=100):
     :param multiplier: A multiplier for the conversion.
     :returns: Cents as an integer, for instance 1055.
 
-    >>> from dautil import data
+    >>> from dautils import data
     >>> data.centify('10.55')
     1055
     '''
@@ -56,7 +56,7 @@ def dropinf(arr):
 
     :returns: The cleaned array.
 
-    >>> from dautil import data
+    >>> from dautils import data
     >>> import numpy as np
     >>> arr = np.array([np.inf, 0, 42, np.nan])
     >>> data.dropinf(arr)
