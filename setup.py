@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='dautils',
       version='0.0.2b2',
       description='Data analysis utilities for Python',
-      url='https://lucidex.zangetsu.co',
+      url='https://www.github.com/diabloxenon/dautils',
       author='Naman Bishnoi',
       author_email='lucidex@zangetsu.co',
       license='MIT',
