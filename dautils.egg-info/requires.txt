@@ -1,3 +1,4 @@
 appdirs
 landslide
 pandas-datareader
+selenium

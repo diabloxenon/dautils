@@ -14,6 +14,7 @@ setup(name='dautils',
       install_requires=[
           'appdirs',
           'landslide',
-          'pandas-datareader'
+          'pandas-datareader',
+          'selenium'
       ],
       zip_safe=False)
